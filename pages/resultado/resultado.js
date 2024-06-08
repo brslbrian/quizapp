@@ -5,12 +5,16 @@ const botaoTema = document.querySelector(".tema button")
 const body = document.querySelector("body")
 const assunto = localStorage.getItem("assunto")
 const botaoJogarNovamente = document.querySelector("main button")
+
 botaoTema.addEventListener("click", () => {
     trocarTema(body, botaoTema)
 })
+
 botaoJogarNovamente.addEventListener("click", jogarNovamente)
 
 verificarTema(body, botaoTema)
+
+
 
 function alterarAssunto() {
     const divIcone = document.querySelector(".assunto_icone")
@@ -32,16 +36,19 @@ function inserirResultado() {
 
     sectionPontuacao.innerHTML = `
                 ${divAssunto.outerHTML}
+
                 <strong>${pontos}</strong>
+
                 <p>de 10</p>
     
     `
 }
 
-function jogarNovamente() {
+function jogarNovamente(){
     localStorage.removeItem("pontos")
     localStorage.removeItem("assunto")
-
+    
     window.location.href = "../../index.html"
 }
+
 inserirResultado()

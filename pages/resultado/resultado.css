@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,6 +23,7 @@
     --white: #fff;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg)
+   
 }
 
 body.escuro {
@@ -34,7 +35,7 @@ body.escuro {
     --pontuacao-bg: #3b4d66;
     --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
     --color-span: #313e51;
-
+    
 }
 
 body {
@@ -57,13 +58,14 @@ header {
     gap: 16px;
 }
 
-.assunto_icone {
+.assunto_icone{
     background: var(--bg-acessibilidade);
     width: 40px;
     height: 40px;
     padding: 5px;
     border-radius: 5px;
 }
+
 
 .assunto_icone.html{
     background: var(--bg-html);
@@ -80,6 +82,7 @@ header {
 .assunto_icone.acessibilidade{
     background: var(--bg-acessibilidade);
 }
+
 
 
 .assunto_icone img {
@@ -183,7 +186,10 @@ main button:hover {
     cursor: pointer;
 }
 
-@media(min-width: 1100px) {
+
+
+
+@media(min-width: 1100px){
     body {
         background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
@@ -225,7 +231,7 @@ main button:hover {
         height: 20px;
     }
 
-    main {
+    main{
         display: flex;
         gap: 140px;
         max-width: 1160px;
@@ -242,7 +248,7 @@ main button:hover {
     }
 
     .pontuacao {
-        border-radius: 24px;
+        border-radius: 24px ;
         margin-bottom: 32px;
     }
 
@@ -253,10 +259,14 @@ main button:hover {
     .pontuacao p {
         font-size: 24px;
     }
-
+    
     main button {
         font-size: 22px;
         padding: 24px;
         border-radius: 24px;
     }
+
+
+
+
 }

@@ -25,7 +25,7 @@
     --red: #ee5454;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg)
-
+   
 }
 
 body.escuro {
@@ -37,6 +37,7 @@ body.escuro {
     --button-bg: #3b4d66;
     --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
     --color-span: #313e51;
+    
 }
 
 body {
@@ -59,7 +60,7 @@ header {
 }
 
 .assunto_icone{
-    background: var(--bg-acessibilidade);
+   
     width: 40px;
     height: 40px;
     padding: 5px;
@@ -81,7 +82,6 @@ header {
 .assunto_icone.acessibilidade{
     background: var(--bg-acessibilidade);
 }
-
 
 .assunto_icone img {
     width: 100%;
@@ -161,6 +161,7 @@ main {
     border-radius: 999px;
 }
 
+
 .alternativas form {
     display: flex;
     flex-direction: column;
@@ -187,6 +188,7 @@ main {
         color: var(--purple);
     }
 }
+
 .alternativas label:has(input:checked){
     outline: 3px solid var(--purple);
 
@@ -214,15 +216,18 @@ main {
     }
 }
 
+
+
+
 .alternativas input {
     display: none;
 }
 
-alternativas div {
+.alternativas div {
     display: flex;
     align-items: center;
     gap: 16px;
-
+    
 }
 
 .alternativas div span {
@@ -234,7 +239,7 @@ alternativas div {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--bg-span);
+    color: var(--color-span);
     flex-shrink: 0;
 }
 
@@ -254,6 +259,13 @@ alternativas div {
     background: var(--purple-hover);
     cursor: pointer;
 }
+
+
+
+
+
+
+
 
 
 @media(min-width: 1100px){
@@ -279,6 +291,7 @@ alternativas div {
         font-size: 28px;
 
     }
+
     .tema {
         gap: 16px
     }
@@ -303,11 +316,11 @@ alternativas div {
         display: flex;
         gap: 130px
     }
-
+    
 
     section {
         width: 100%;
-
+        
     }
 
     .pergunta {
@@ -352,6 +365,8 @@ alternativas div {
     .alternativas button {
         font-size: 22px;
     }
+
+
 
 
 }
